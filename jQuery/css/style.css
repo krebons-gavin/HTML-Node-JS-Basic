@@ -1,0 +1,18 @@
+.flip, .panel{
+    padding:5px;
+    text-align:center;
+    background-color: #65ee74;
+    border:solid 1px #8c8888;
+}
+.panel{
+    padding: 50px;
+}
+
+.ancestors *
+{
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}

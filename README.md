@@ -1,6 +1,12 @@
-MyPython
-========
+JS Basic Skill Practice
 
-This folder is for Python basic learning.
+This folder is for Javascript basic learning.
 
-Created: Gavin, 2014-04-17
+2016-01-08, Created by Gavin
+
+jQuery
+CSS
+Bootstrap
+AngularJS
+NodeJS
+......

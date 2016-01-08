@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!-- jQuery Learning 001
+    2015-08-12, Gavin Created
+    http://www.runoob.com/jquery/jquery-tutorial.html
+-->
+
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>Hello jQuery</title>
+
+      <!--jQuery CDN-->
+      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>-->
+      <!--jQuery CDN - 百度 -->
+      <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+      <!--内部jQuery脚本-->
+      <script>
+          // 文档准备就绪事件
+          $(document).ready(function(){
+              // 选取 HTML 元素，并对选取的元素执行某些操作
+              // 隐藏所有 class="test" 的段落
+              $("p.test").click(function(){
+                 $(this).hide();
+              });
+          });
+      </script>
+  </head>
+
+  <body>
+    <h2>Hello jQuery</h2>
+    <p class="test">如果你点击我， 我就会消失。</p>
+    <p>继续点击！我不会消失</p>
+    <p id="test">我也不会消失</p>
+  </body>
+</html>

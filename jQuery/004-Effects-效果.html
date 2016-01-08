@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!-- jQuery Learning 004 - Selectors
+    2015-08-12, Gavin Created
+    2015-08-13, Gavin Modified
+    http://www.runoob.com/jquery/jquery-hide-show.html
+    http://www.runoob.com/jquery/jquery-fade.html
+-->
+
+<html>
+  <head lang="en">
+    <meta charset="gb2312">
+    <title>jQuery Effects</title>
+
+      <!--jQuery CDN-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+
+      <!--调用外部jQuery脚本-->
+      <script src="./js/jQuery_effects.js"></script>
+
+      <!--调用外部CSS样式-->
+      <link rel="stylesheet" type="text/css" href="./css/style.css"  />
+
+  </head>
+
+  <body>
+    <h1>jQuery 效果</h1>
+    <h2>Show / Hide方法</h2>
+    <hr/>
+    <p class="test"> 如果你双击我， 我就会消失。</p>
+    <p> 继续点击！我不会消失</p>
+    <p id="test">我也不会消失</p>
+    <p id="popup">这是一个段落，鼠标按下时候会有弹出框！</p>
+    <button class="hide">隐藏</button>
+    <button class="show">显示</button>
+
+    <h3>List 1:</h3>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+
+    <h2>Toggle 方法</h2>
+    <p class="toggle">这是另外一个文本段落。用来测试toggle方法。</p>
+    <button class="tog">隐藏/显示</button>
+
+    <h2>淡入 方法</h2>
+    <hr/>
+    <p>使用不同参数来演示 fadeIn() 方法。</p>
+    <button class="fadein">点击来 fade in boxes</button>
+    <!--只用一个br的话会出错！页面效果没有任何反应-->
+    <br><br>
+    <div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+    <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+    <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+    <h2>淡出 方法</h2>
+    <p>使用不同参数来演示 fadeOut() 方法。</p>
+    <button class="fadeout">点击来 fade out boxes</button>
+    <br>
+
+    <h2>fadeToggle 方法</h2>
+    <p>使用不同参数来演示 fadeTogg() 方法。</p>
+    <button class="fadetoggle">点击来 fade in/out boxes</button>
+    <br>
+
+    <h2>滑动 - slideUp()</h2>
+    <hr/>
+    <div class="flip">Click to slide down panel</div>
+    <div class="panel">Hello Gavin!</div>
+
+    <h2>链接 - Chaining</h2>
+    <hr/>
+    <p id="p1">jQuery is fun!!</p>
+    <button class="chaining">请点击我</button>
+
+    <p>------------------The End!------------------</p>
+  </body>
+</html>
