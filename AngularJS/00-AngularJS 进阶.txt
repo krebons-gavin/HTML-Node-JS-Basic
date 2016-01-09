@@ -8,7 +8,10 @@
 
 // 初级教程 - 中文
 ------------------
-	http://docs.ngnice.com/api
+	
+	慕课网 - 视频教程
+	http://www.imooc.com/learn/156
+	http://www.imooc.com/video/2923
 ------------------
 
 
@@ -26,7 +29,9 @@
 
 // 中级教程 - 英文
 ------------------
-
+	// 教程及API
+	http://docs.ngnice.com/api
+	https://github.com/angular/angular-phonecat
 ------------------
 
 

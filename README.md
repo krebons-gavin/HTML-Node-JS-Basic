@@ -32,6 +32,24 @@ This folder is for Javascript basic learning.
 
 必备工具
 --------------------------
+	Chrome开发者工具
+	// 调试
+	http://imweb.io/topic/568802e04c44bcc56092e402?from=timeline&isappinstalled=0
+
+	Webstorm / IntelliJ IDEA
+	// 开发工具 - IDE
+
+	Sublime Text
+	// 文本编辑 - 轻量级IDE
+--------------------------
+
+
+必备网站
+--------------------------
+	npm
+	// package manager for javascript
+	https://www.npmjs.com/
+
 	Bower
 	// js文件及版本管理
 
@@ -47,6 +65,8 @@ This folder is for Javascript basic learning.
 
 常用的JS库
 --------------------------
+	http://segmentfault.com/a/1190000004236363
+
 	WebRTC 		
 	// 即时聊天、视频
 	https://webrtc.org/
@@ -60,4 +80,13 @@ This folder is for Javascript basic learning.
 	jQuery	
 	// 动画、DOM操作等
 	
+	mathjs
+	// 数学库
+	http://mathjs.org/
+
+	data.js
+	// 数据操作
+
+	share.js
+	// 分享
 --------------------------
