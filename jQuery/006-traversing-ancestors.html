@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<!-- jQuery Learning 006 - Selectors
+    2015-08-22, Created by Gavin
+    2015-08-23, Modified by Gavin
+    2016-01-09, Modified by Gavin
+    http://www.runoob.com/jquery/jquery-traversing-ancestors.html
+-->
+
+<html>
+  <head lang="en">
+    <meta charset="gb2312">
+    <title>jQuery 遍历</title>
+
+      <!--jQuery CDN-->
+      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>-->
+
+      <!--<script src="./js/jquery.js"></script>-->
+
+      <!--调用外部jQuery脚本-->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./js/jQuery-ancestors.js"></script>
+
+      <!--调用外部CSS样式-->
+      <link rel="stylesheet" type="text/css" href="./css/style.css"  />
+
+
+  </head>
+
+  <body>
+    <h1>jQuery 遍历</h1>
+    <div class="ancestors">div (root)
+      <div style="width: 500px;">div (great-grandparent)
+        <ul>ul (grandparent)
+          <li>li (direct parent)<br>
+            <span>span in li </span>
+          </li>
+        </ul>
+      </div>
+
+      <div style="width: 500px;">div (grandparent)
+        <p>p (direct parent)<br>
+          <span>span in p</span>
+        </p>
+      </div>
+
+    </div>
+
+    <hr/>
+    <h1>jQuery 遍历-过滤</h1>
+
+    <div>
+      <p>div1-start: This is a paragraph in a div. div1-end</p>
+    </div>
+
+    <div>
+      <p>div2-start: This is a paragraph in another div.</p>
+      <p>This is also a paragraph in the same div. div 的最后一个p标签背景色为黄. div2-end</p>
+    </div>
+
+    <hr/>
+    <p>My name is Gavin</p>
+    <p class="intro">I live in Beijing.仅 class = intro的 p标签背景为绿色.</p>
+    <p class="intro">I love jQuery.</p>
+    <p>My cat is yellow.</p>
+
+    <p>------------------The End!------------------</p>
+
+  </body>
+</html>
