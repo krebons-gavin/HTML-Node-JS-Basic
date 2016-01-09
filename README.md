@@ -40,8 +40,8 @@ This folder is for Javascript basic learning.
 	http://www.gruntjs.net/
 
 	Github
-	// 代码管理及控制
-
+	// 代码管理及控制，查看他人的开源项目代码
+	https://github.com/
 --------------------------
 
 
