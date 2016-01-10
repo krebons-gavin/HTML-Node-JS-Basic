@@ -28,7 +28,12 @@
 
 // 高级教程 - 中文
 ------------------
+	JavaScript资源大全中文版
+	// 内容包括：包管理器、加载器、测试框架、运行器、QA、MVC框架和库、模板引擎等
+	https://github.com/jobbole/awesome-javascript-cn
 
+	全栈式JavaScript
+	http://blog.jobbole.com/52745/
 ------------------
 
 // 高级教程 - 英文

@@ -30,6 +30,12 @@ This folder is for Javascript basic learning.
 --------------------------
 
 
+编码规范 - 参考
+--------------------------
+	http://imweb.github.io/CodeGuide/
+--------------------------
+
+
 必备工具
 --------------------------
 	Chrome开发者工具
