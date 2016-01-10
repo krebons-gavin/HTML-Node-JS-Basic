@@ -1,0 +1,40 @@
+<!-- 2016-01-10, Created by gavin
+    html and Javascript functions
+    http://www.runoob.com/js/js-functions.html
+-->
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <!--调用外部样式表-->
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+        <!--调用外部js脚本-->
+        <script type="text/javascript" src="./js/functions.js"></script>
+
+        <script>
+            document.write("<h2>This is a heading-h2, 内部Javascript</h2>");
+        </script>
+    </head>
+
+    <body>
+        <h1>JS Functions</h1>
+        <h2>无参函数</h2>
+        <button onclick="myFunction()">外部函数的调用</button>
+        <br>
+
+        <h2>带参数的函数</h2>
+        <button onclick="myFunction2('Gavin', 'Requirements Analyst')">带有参数的函数</button>
+
+        <h2>带返回值的函数</h2>
+        <p>本例子调用的函数会执行一个计算,然后返回结果</p>
+        <p id="demo"></p>
+    </body>
+
+    <!--内部Javascript-->
+    <script>
+        document.getElementById("demo").innerHTML=multipleNum(3,7);
+    </script>
+
+</html>
