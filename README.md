@@ -93,6 +93,10 @@ This folder is for Javascript basic learning.
 	data.js
 	// 数据操作
 
+	Rapid D3.js
+	// 动画
+	http://edu.csdn.net/course/detail/1848
+	
 	share.js
 	// 分享
 --------------------------

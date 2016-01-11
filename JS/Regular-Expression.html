@@ -1,0 +1,50 @@
+<!-- 2016-01-11, Created by gavin
+    html and Javascript Regular Expression
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+-->
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+        <!--jQuery CDN - 百度 -->
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!--调用外部样式表-->
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+        <!--调用外部js脚本-->
+        <script type="text/javascript" src="./js/RegularExpression.js"></script>
+
+        <script>
+            document.write("<h2>内部Javascript - JS正则表达式</h2>");
+        </script>
+    </head>
+
+    <body>
+        <h1>JS Regular Expression</h1>
+        <h2>例1: Check Telephone</h2>
+        <p>Enter your phone number (with area code) and then click "Check".
+            <br>The expected format is like ###-###-####.</p>
+        <form action="#">
+            <input id="phone"><button onclick="testInfo(document.getElementById('phone'));">Check</button>
+        </form>
+
+        <hr/>
+        <h2>例2: Search()</h2>
+        <p>搜索子串 "w3cSchool"在字符串"Visit W3cSchool!"中的位置, 并显示匹配的起始位置：</p>
+
+        <button onclick="myFunction()">点我</button>
+
+        <p id="demo"></p>
+
+        <hr/>
+        <h2>例3: Replace()</h2>
+        <p>替换"W3School"为 "Gavin"</p>
+        <button onclick="myReplace()">点我</button>
+        <p id="demo2">Please visit w3cSchool!</p>
+
+    </body>
+
+
+</html>
