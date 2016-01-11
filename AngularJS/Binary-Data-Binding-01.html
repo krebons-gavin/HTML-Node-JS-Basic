@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--2015-12-12, Created by Gavin
+    AngularJS 双向数据绑定
+    参考: 慕课网
+    http://www.imooc.com/video/2867
+    -->
+
+    <head>
+        <meta charset="UTF-8">
+        <title>双向数据绑定</title>
+
+        <!--百度CDN：AngularJS, jQuery, Bootstap
+        http://cdn.code.baidu.com/
+        
+        <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        -->
+
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 
+        <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        -->
+
+        <!--调用本地脚本-->
+        <script src="./js/lib/angular.min.js"></script>
+        <script src="./js/lib/bootstrap.min.js"></script>
+        <script src="./js/lib/jquery.min.js"></script>
+
+        <script src="./js/Binding.js"></script>
+
+        <!-- 新 Bootstrap 核心 CSS 文件 
+        <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        -->
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+
+    </head>
+
+    <body ng-app="myApp">
+        <div ng-controller="UserInfoCtrl">
+
+            <!--ng-bind 用于单向绑定-->
+            <p><span ng-bind="greeting.text"></span>,Angular. 2015-12-12, Created by Gavin</p>
+            <p><span ng-bind="greeting.text"></span>,Angular. 2016-01-12, Modified by Gavin</p>
+        </div>
+
+        <!--以form为例-->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title">双向数据绑定</div>
+            </div>
+
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-horizontal" role="form" ng-controller="UserInfoCtrl">
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">邮箱:</label>
+
+                                <div class="col-md-10">
+                                    <!--ng-model用于双向绑定-->
+                                    <input type="email" class="form-control" placeholder="推荐使用126邮箱" ng-model="userInfo.email">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">密码:</label>
+
+                                <div class="col-md-10">
+                                    <input type="password" class="form-control" placeholder="只能输入字母\数字\下划线" ng-model="userInfo.password">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-md-10">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" ng-model="userInfo.autoLogin"> 自动登录
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-md-10">
+                                    <button class="btn btn-default" ng-click="getUserInfo()">获取From表单的值</button>
+
+                                    <button class="btn btn-default" ng-click="setUserInfo()">设置From表单的值</button>
+
+                                    <button class="btn btn-default" ng-click="resetUserInfo()">重置From表单的值</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
