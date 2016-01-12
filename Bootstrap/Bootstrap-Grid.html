@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<!-- Bootstrap Grid System
+    2016-01-12, Created by Gavin
+    http://v3.bootcss.com/css/#grid
+    http://v3.bootcss.com/css/#type
+-->
+
+<html>
+  <head lang="en">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <title>Hello Bootstrap</title>
+
+      <!--jQuery CDN，必须在Bootstrap之前引入jQuery！-->
+      <!-- 新 Bootstrap 核心 CSS 文件 -->
+      <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+      <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+      <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  </head>
+
+  <body>
+    <!--“行（row）”必须包含在 .container （固定宽度）或 .container-fluid （100% 宽度）中，以便为其赋予合适的排列（aligment）和内补（padding）。-->
+    <!--流式布局容器-->
+    <div class="container-fluid">
+        <h1>Hello Bootstrap</h1>
+
+        <h2>例1-12列</h2>
+        <hr/>
+        <div class="row">
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+            <div class="col-md-1">.col-md-1</div>
+        </div>
+
+        <h2>例2-3列</h2>
+        <hr/>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Column 1</h3>
+                <p>学的不仅是技术，更是梦想！</p>
+                <p>Just do it!</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Column 2</h3>
+                <p>学的不仅是技术，更是梦想！</p>
+                <p>Just do it!</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Column 3</h3>
+                <p>学的不仅是技术，更是梦想！</p>
+                <p>Just do it!</p>
+            </div>
+        </div>
+
+        <h2>例3-2列:8-4分</h2>
+        <hr/>
+        <div class="row">
+            <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+
+        <h2>例4-2列:6-6分</h2>
+        <hr/>
+        <div class="row">
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-6">.col-md-6</div>
+        </div>
+
+        <h2>例5:列偏移</h2>
+        <hr/>
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+        </div>
+
+    </div>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

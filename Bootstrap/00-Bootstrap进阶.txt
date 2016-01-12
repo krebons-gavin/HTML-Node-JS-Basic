@@ -3,12 +3,13 @@
 
 // Bootstrap 官网
 ------------------
-
+	http://getbootstrap.com/
 ------------------
 
 // 初级教程 - 中文
 ------------------
-	
+	http://www.bootcss.com/
+	http://v3.bootcss.com/css/
 ------------------
 
 // 初级教程 - 英文
