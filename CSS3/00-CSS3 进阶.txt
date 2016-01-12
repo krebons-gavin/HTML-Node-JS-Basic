@@ -9,12 +9,14 @@
 // 初级教程 - 中文
 ------------------
 	http://www.bootcss.com/
+	
+	// CSS3参考手册
 	http://css.doyoe.com/
 ------------------
 
 // 初级教程 - 英文
 ------------------
-
+	http://www.w3schools.com/css/css3_intro.asp
 ------------------
 
 // 中级教程 - 中文
