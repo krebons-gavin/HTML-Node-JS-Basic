@@ -3,21 +3,41 @@
 
 // AngularJS官网
 ------------------
-
+	// Google - AngularJS
+	https://angularjs.org/
 ------------------
+
 
 // 初级教程 - 中文
 ------------------
-	
-	慕课网 - 视频教程
+	// 慕课网 - 视频教程
 	http://www.imooc.com/learn/156
 	http://www.imooc.com/video/2923
+
+	// AngularJS入门教程
+	http://angularjs.cn/A003
 ------------------
 
 
 // 初级教程 - 英文
 ------------------
+	// 官网
+	https://docs.angularjs.org/tutorial
+------------------
 
+
+// API查询
+------------------
+	// AngularJS官网
+	https://docs.angularjs.org/api/ng/directive/ngModel
+	http://docs.angularjs.cn/api
+------------------
+
+
+// 社区
+------------------
+	// Angular中文社区
+	http://angularjs.cn/
 ------------------
 
 
@@ -47,3 +67,21 @@
 ------------------
 
 
+// 含义
+------------------
+	'use strict';
+	// 严格模式：消除代码运行的一些不安全之处，保证代码运行的安全
+	http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html
+------------------
+
+
+// 常见问题
+------------------
+	// AngularJS中service，factory，provider的区别
+	http://my.oschina.net/tanweijie/blog/295067
+	// services作为单例对象在需要到的时候被创建，只有在应用生命周期结束的时候（关闭浏览器）才会被清除。而controllers在不需要的时候就会被销毁了。
+	// factory()让我们通过返回一个包含service方法和数据的对象来定义一个service。在service方法里面我们可以注入services，比如 $http 和 $q等。
+	// 当我们希望在应用开始前对service进行配置的时候就需要使用到provider()。
+
+	
+------------------
