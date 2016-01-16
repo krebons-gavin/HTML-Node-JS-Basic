@@ -7,8 +7,14 @@
 	https://angularjs.org/
 ------------------
 
+
 // API文档
 ------------------
+	// 官网-有时需要翻墙
+	https://docs.angularjs.org/api
+	https://docs.angularjs.org/api/ng/directive/ngModel
+
+	// 英文版-不翻墙可以用
 	http://docs.ngnice.com/api
 ------------------
 
@@ -21,21 +27,17 @@
 
 	// AngularJS入门教程
 	http://angularjs.cn/A003
+
+	// Angular中文开发指南
+	https://gitcafe.com/Angularjs/Angularjs-Developer-Guide/blob/master/AngularJS%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%9705%EF%BC%9A%E6%8C%87%E4%BB%A4.md
 ------------------
+
 
 
 // 初级教程 - 英文
 ------------------
 	// 官网
 	https://docs.angularjs.org/tutorial
-------------------
-
-
-// API查询
-------------------
-	// AngularJS官网
-	https://docs.angularjs.org/api/ng/directive/ngModel
-	http://docs.angularjs.cn/api
 ------------------
 
 
