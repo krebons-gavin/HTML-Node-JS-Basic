@@ -1,0 +1,11 @@
+Git常用命令
+
+http://www.cnblogs.com/sawyerzhu/p/3578268.html
+------------------
+	git version			// 查看当前git版本信息
+	git help 			// 获取全部命令帮助信息
+	git pull 			// 从服务器的仓库中获取代码，和本地代码合并
+	git push 			// 将本地代码推送到服务器的仓库中
+	git clone 			// 从服务器端克隆项目到本地
+	...
+------------------

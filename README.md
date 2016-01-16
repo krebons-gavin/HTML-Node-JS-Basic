@@ -14,6 +14,9 @@ This folder is for Javascript basic learning.
 	AngularJS
 	NodeJS
 	......
+
+	// 前端程序员：月薪 5K 到 5 万，我干了啥
+	http://www.techug.com/front-end-programmer
 --------------------------
 
 
@@ -30,6 +33,12 @@ This folder is for Javascript basic learning.
 
 	// imweb前端社区
 	http://imweb.io/
+
+	// Web technology for developers
+	https://developer.mozilla.org/en-US/docs/Web
+
+	// Webplatform
+	https://docs.webplatform.org/wiki/Main_Page/zh
 --------------------------
 
 
@@ -138,4 +147,7 @@ This folder is for Javascript basic learning.
 --------------------------
 	// 从零开始学web安全（1）
 	http://imweb.io/topic/568958714c44bcc56092e409
+
+	// MDN - Web security
+	https://developer.mozilla.org/en-US/docs/Web/Security
 --------------------------

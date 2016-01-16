@@ -1,0 +1,5 @@
+AngularJS - Controller 注解
+// 2016-01-16, Gavin
+// https://docs.angularjs.org/guide/controller
+
+

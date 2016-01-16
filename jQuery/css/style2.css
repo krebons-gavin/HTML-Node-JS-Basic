@@ -4,5 +4,33 @@
 }
 
 .blue {
+    margin:5px;
     color: deepskyblue;
+    background: lightgoldenrodyellow;
+}
+
+button{
+    margin:5px;
+    font-size: 14px; ;
+}
+
+div {
+    color: deepskyblue;
+}
+
+.div1 {
+    color: deepskyblue;
+}
+
+.div2{
+    color:grey;
+}
+
+p{
+    margin:5px;
+    color: cadetblue;
+}
+
+span {
+    color: firebrick;
 }

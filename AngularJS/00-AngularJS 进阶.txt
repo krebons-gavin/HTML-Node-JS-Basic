@@ -7,6 +7,11 @@
 	https://angularjs.org/
 ------------------
 
+// API文档
+------------------
+	http://docs.ngnice.com/api
+------------------
+
 
 // 初级教程 - 中文
 ------------------
@@ -49,8 +54,10 @@
 
 // 中级教程 - 英文
 ------------------
-	// 教程及API
-	http://docs.ngnice.com/api
+	// Developer Guide -官网
+	https://docs.angularjs.org/guide/controller
+
+	// PhoneCat Demo 应用
 	https://github.com/angular/angular-phonecat
 ------------------
 
