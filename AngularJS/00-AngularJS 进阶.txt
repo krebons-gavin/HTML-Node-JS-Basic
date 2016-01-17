@@ -50,6 +50,9 @@
 
 // 中级教程 - 中文
 ------------------
+	// 脚本之家 - AngularJS例子
+	// 更新较快，首选
+	http://www.jb51.net/list/list_253_1.htm
 
 ------------------
 
@@ -92,5 +95,6 @@
 	// factory()让我们通过返回一个包含service方法和数据的对象来定义一个service。在service方法里面我们可以注入services，比如 $http 和 $q等。
 	// 当我们希望在应用开始前对service进行配置的时候就需要使用到provider()。
 
-	
+	// Compile 和link的区别
+	http://www.bubuko.com/infodetail-694161.html
 ------------------

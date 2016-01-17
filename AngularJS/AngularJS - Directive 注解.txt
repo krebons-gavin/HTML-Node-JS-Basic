@@ -107,6 +107,7 @@ function link(scope, element, Attrs, controller) { ... }
 ------------------
 	// 可选
 	// 创建可以操作DOM的指令
+	// 链接函数负责注册DOM事件和更新DOM。它是在模板被克隆之后执行的。 它也是大部分指令逻辑代码编写的地方。
 	scope			// 指令需要监听的作用域。
 
 	element 		// instance element - 指令所在的元素。
@@ -123,7 +124,7 @@ compile
 function compile(tElement, tAttrs, transclude) { ... }
 ------------------
 	// 可选
-	// 编译函数，用来处理需要修改模板DOM的情况的。
+	// 编译函数是用来处理需要修改模板DOM的情况的。
 	// 和link互斥
 	tElement 	// template element - 指令所在的元素。
 				// 对这个元素及其子元素进行变形之类的操作是安全的。
