@@ -3,16 +3,25 @@ JS Basic Skill Practice
 This folder is for Javascript basic learning.
 
 // 2016-01-08, Created by Gavin
-// 2016-01-15, Created by Gavin
+// 2016-01-20, Modified by Gavin
 
 主要内容
 --------------------------
 	jQuery
+
 	CSS3
+
 	Bootstrap
+
 	HTML5
+
 	AngularJS
+
 	NodeJS
+
+	Scaffolding			// 脚手架
+	http://yeoman.io/generators/
+
 	......
 
 	// 前端程序员：月薪 5K 到 5 万，我干了啥
@@ -60,6 +69,10 @@ This folder is for Javascript basic learning.
 
 	Sublime Text
 	// 文本编辑 - 轻量级IDE
+
+	Sencha Architect
+	// The ultimate visual app builder for developing cross-platform HTML5 applications on desktop and mobile devices.
+	https://www.sencha.com/products/architect/#overview
 --------------------------
 
 
@@ -104,6 +117,16 @@ This folder is for Javascript basic learning.
 --------------------------
 
 
+常用UI库
+--------------------------
+	Angular UI
+	http://angular-ui.github.io/
+
+	KissyUI
+	http://docs.kissyui.com/1.4/docs/html/coms.html
+--------------------------
+
+
 常用的JS库
 --------------------------
 	http://segmentfault.com/a/1190000004236363
@@ -136,12 +159,16 @@ This folder is for Javascript basic learning.
 	// 数据操作
 
 	Rapid D3.js
-	// 动画
+	// 动画, 数据
+	https://github.com/westbaystars/rapidd3js
+	
+	http://edu.csdn.net/course/detail/1848
 	http://edu.csdn.net/course/detail/1848
 	
 	share.js
 	// 分享
 --------------------------
+
 
 // WEB安全
 --------------------------
@@ -151,3 +178,15 @@ This folder is for Javascript basic learning.
 	// MDN - Web security
 	https://developer.mozilla.org/en-US/docs/Web/Security
 --------------------------
+
+
+// 核心UI组件
+--------------------------
+	datetimepicker			// 日期、时间选择
+	form 					// 表单
+	calender				// 日历
+	validation				// 验证
+	tree					// 树状：according，导航等
+	......
+--------------------------
+

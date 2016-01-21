@@ -75,7 +75,9 @@
 
 // 高级教程 - 英文
 ------------------
-
+	Angular UI
+	http://angular-ui.github.io/
+	https://angular-ui.github.io/bootstrap/
 ------------------
 
 
@@ -97,4 +99,8 @@
 
 	// Compile 和link的区别
 	http://www.bubuko.com/infodetail-694161.html
+
+	// 命名中的坑：驼峰命名法，属性字段不一样
+	在scope中的属性名为：	expanderTitle
+	则对应HTML文件中的属性：expander-title
 ------------------

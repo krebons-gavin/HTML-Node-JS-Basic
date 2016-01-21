@@ -2,18 +2,86 @@ AngularJS - Directive 注解
 // 2016-01-16, Gavin
 // 官网
 https://docs.angularjs.org/guide/directive
+// 官网-参数列表-英文
+https://docs.angularjs.org/api/ng/service/$compile
 
 // 中文参考
 https://gitcafe.com/Angularjs/Angularjs-Developer-Guide/blob/master/AngularJS%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%9705%EF%BC%9A%E6%8C%87%E4%BB%A4.md
+
+
+参数示例
+------------------
+	angular.module('myApp', []) 
+
+	.directive('myDirective', function() { 
+	  return { 
+	    restrict: String, 
+	    
+	    priority: Number, 
+	    
+	    terminal: Boolean, 
+	    
+	    template: String or Template Function: 
+	  function(tElement, tAttrs) {...}, 
+	  
+	  templateUrl: String, 
+	  
+	  // 替换：用指令的内容替换掉里面别的内容
+	  replace: Boolean or String, 
+	  
+	  // 独立scope,确保指令之间不会相互影响
+	  scope: Boolean or Object, 
+	  
+	  // 内部内容是否可以变换和嵌套
+	  transclude: Boolean, 
+	  
+	  // controller: 暴露出一组方法或者属性，供外部调用
+	  controller: String or 
+	  function(scope, element, attrs, transclude, otherInjectables) { ... }, 
+	  
+	  controllerAs: String, 
+	  
+	  // 是否依赖于其他外部指令
+	  // 如果依赖于其他指令，自动注入该指令的Controller
+	  require: String, 
+	  
+	  // Link: 链接
+	  // 链接阶段处理指令内部的事务，如给元素绑定事件，绑定数据等。
+	  // 编译函数(compile)负责对模板DOM进行转换。链接函数(link)负责将作用域和DOM进行链接。
+	  link: function(scope, iElement, iAttrs) { ... }, 
+	  
+	  // Compile：编译
+	  // 在编译的阶段，angularJs会遍历整个的文档并根据JavaScript中指令定义来处理页面上什么的指令。
+	  // 一但遍历和编译完毕就会返回一个叫做模板函数的函数。
+	  // 在这个函数没被返回（return）之前我们可以对编译后的DOM树进行修改。
+	  // 通常情况下，如果设置了compile函数，说明我们希望在指令和实时数据被放到DOM中之前进行DOM操作，在这个函数中进行诸如添加和删除节点等DOM操作是安全的。
+	  // compile 返回一个对象或连接函数，如下所示：
+	  compile: 
+	  function(tElement, tAttrs, transclude) { 
+	    return { 
+	      pre: function(scope, iElement, iAttrs, controller) { ... }, 
+	      
+	      post: function(scope, iElement, iAttrs, controller) { ... } 
+	      } 
+	    // 当我们设置了link选项，实际上是创建了一个postLink() 链接函数，以便compile() 函数可以定义链接函数。
+	    return function postLink(...) { ... } 
+	    } 
+
+	  }; 
+
+	 });
+------------------
+
 
 restrict
 ------------------
 	// 可选
 	// 规定指令定义的格式。建议采用第一种或第二种
-	A 		// 元素  	<div my-directive></div>
-	E		// 属性		<my-directive></my-directive>
+	A 		// 属性  	<div my-directive></div>
+	E		// 元素		<my-directive></my-directive>
 	C		// 类名		<div class="my-directive"></div>
 	M		// 注释		<!--my-directive-->
+			// 最后一种方式建议再不要求逼格指数的时候千万不要用。
 ------------------
 
 
@@ -51,17 +119,23 @@ replace
 ------------------
 	// 可选
 	// 值：true
-	// 如果被设置成true那么现在的元素会被模板替换，而不是被插入到元素中。
+	// 如果被设置成true,那么现在的元素会被模板替换，而不是被插入到元素中。
 ------------------
 
 
 scope
 ------------------
 	// 可选
-	// 为当前指令创建一个新的作用域。
+	// 作用1：独立scope,确保指令之间不会相互影响.
+	// 作用2：数据绑定。绑定策略如下：
 	@			// 本地作用域。将本地作用域成员成员和DOM属性绑定。
+				// 传递的是字符串，不是对象
+
 	=			// 双向绑定。在本地作用域属性和父作用域属性间建立一个双向的绑定。
-	&			// 父级作用域。提供了一种能在父作用域下执行表达式的方法。如果没有指定父作用域属性名称，那就和本地名称一样。
+				// 控制器和指令中的数据同时发生改变
+
+	&			// 父级作用域。调用父作用域中的函数
+				// 传递的是函数
 ------------------
 
 
@@ -69,18 +143,32 @@ transclude
 ------------------
 	// 可选
 	// 值：true / false
-	// 现在的元素不会被模板替换掉。现在的元素插入到模板中。用于指令的相互调用。
+	// 嵌套。现在的元素不会被模板替换掉。现在的元素插入到模板中。用于指令的相互调用。
+	// 如果指令使用了transclude参数，那么在控制器无法正常监听数据模型的变化了。建议在链接函数里使用$watch服务。
 ------------------
 
 
 controller
 ------------------
 	// 可选
-	// 控制器
-	$scope			// 当前元素关联的作用域。
-	$element		// 当前元素
-	$Attrs			// 当前元素的属性对象
-	$transclude		//  模板链接功能前绑定到正确的模板作用域  ??
+	// controller参数可以是一个字符串或一个函数。
+	// 可以在指令内部通过匿名构造函数的方式来定义一个内联的控制器.
+	// 我们可以将任意可以被注入的ng服务注入到控制器中，便可以在指令中使用它了。
+	// 控制器中也有一些特殊的服务可以被注入到指令当中。这些服务有：
+	$scope			// 与指令元素相关联的当前作用域。
+
+	$element		// 当前指令对应的元素。
+
+	$Attrs			// 由当前元素的属性组成的对象。
+					// 	<div id="aDiv"class="box"></div>
+					// 具有如下的属性对象：
+					// { 
+					// id: "aDiv", 
+					// class: "box" 
+					// } 
+
+	$transclude		// 嵌入链接函数会与对应的嵌入作用域进行预绑定。
+					// transclude链接函数是实际被执行用来克隆元素和操作DOM的函数。
 ------------------
 
 
@@ -94,7 +182,9 @@ controllerAs
 require
 ------------------
 	// 可选
-	// 查找控制器
+	// require为字符串，代表另外一个指令的名字。
+	// 依赖于其他指令，自动注入依赖的指令的Controller。
+	// require会将控制器注入到其所指定的指令中，并作为当前指令的链接函数的第四个参数。
 	?			// 不要触发错误。如果当前指令中没有找到所需要的控制器，会将null传给link函数的第4个参数
 	^			// 没找到的话，在父元素的controller里面也查找有没有控制器.
 	?^			// 将前面两个选项的行为组合起来
@@ -103,7 +193,7 @@ require
 
 
 link
-function link(scope, element, Attrs, controller) { ... }
+function link(scope, element, attrs, controller, transcludeFn) { ... }
 ------------------
 	// 可选
 	// 创建可以操作DOM的指令
@@ -125,7 +215,8 @@ function compile(tElement, tAttrs, transclude) { ... }
 ------------------
 	// 可选
 	// 编译函数是用来处理需要修改模板DOM的情况的。
-	// 和link互斥
+	// 希望在指令和实时数据被放到DOM中之前进行DOM操作，在这个函数中进行诸如添加和删除节点等DOM操作是安全的。
+	// 和link互斥.如果同时设置了这两个选项，那么会把compile所返回的函数当作链接函数，而link选项本身则会被忽略。
 	tElement 	// template element - 指令所在的元素。
 				// 对这个元素及其子元素进行变形之类的操作是安全的。
 
@@ -149,6 +240,8 @@ AngularJS 内置指令
 	ng-controller	// 嵌套在指令中的子作用域
 
 	ng-form			// 表单？
+
+	ng-grid			// 封装Data Grid控件
 
 	ng-include		// 加载、编译并包含外部HTML片段到当前的应用中
 

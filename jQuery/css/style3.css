@@ -1,0 +1,24 @@
+/*2016-01-18, Added by Gavin*/
+
+p{
+    background: darkgray;
+    font-weight:bold;
+    cursor:pointer;
+    padding:5px;
+}
+
+p.customp{
+    color:orangered;
+}
+
+p.over{
+    background: #ccc;
+}
+
+span{
+    color:darkred;
+}
+
+span.customspan{
+    color:cadetblue;
+}
