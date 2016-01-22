@@ -1,6 +1,7 @@
 // AngularJS 进阶
 // 2016-01-09, Created by Gavin
 
+
 // AngularJS官网
 ------------------
 	// Google - AngularJS
@@ -16,6 +17,18 @@
 
 	// 英文版-不翻墙可以用
 	http://docs.ngnice.com/api
+------------------
+
+
+// 全局意识
+------------------
+	1. service, provider, factory本质上都是Provider；使用时候多用Service，另两个使用频率较低；
+
+	2. Service：提供公共的数据访问，输入进来的才能处理，不要做任何与UI有关的事情，不要使用注入；
+
+	3. Controller：使用Service中的数据，定义scope；控制范围比directive更广；
+
+	4. Directive：倾向于控制UI，做所有与UI有关的事情，也可以使用注入的Service和Controller，倾向于处理局部的数据。
 ------------------
 
 
@@ -38,6 +51,9 @@
 ------------------
 	// 官网
 	https://docs.angularjs.org/tutorial
+
+	// tutorialspoint
+	http://www.tutorialspoint.com/angularjs/angularjs_dependency_injection.htm
 ------------------
 
 
@@ -89,6 +105,16 @@
 ------------------
 
 
+// 常用控件
+------------------
+	Datepicker
+	https://github.com/diosney/angular-bootstrap-datetimepicker-directive/blob/master/angular-bootstrap-datetimepicker-directive.js
+
+	http://eonasdan.github.io/bootstrap-datetimepicker/
+	
+------------------
+
+
 // 常见问题
 ------------------
 	// AngularJS中service，factory，provider的区别
@@ -103,4 +129,10 @@
 	// 命名中的坑：驼峰命名法，属性字段不一样
 	在scope中的属性名为：	expanderTitle
 	则对应HTML文件中的属性：expander-title
+
+	// Provider模式？
+
+	// Promise对象?
+	// 要在AngularJS中使用Promise，要使用AngularJS的内置服务$q
+	http://segmentfault.com/a/1190000002788733
 ------------------

@@ -190,3 +190,31 @@ This folder is for Javascript basic learning.
 	......
 --------------------------
 
+
+// CDN 
+--------------------------
+	// 百度CDN
+	http://cdn.code.baidu.com/
+
+	<!--AngularJS-->
+    <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+    <!--jQuery-->
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <!--
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></script>
+--------------------------
+
+// Local JS
+--------------------------
+	<!--AngularJS-->
+    <script src="libs/angular/1.4.6/angular.min.js"></script>
+    <!--jQuery-->
+    <script src="libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <script src="libs/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <script src="libs/bootstrap/3.3.6/bootstrap.min.css"></script>
+--------------------------
