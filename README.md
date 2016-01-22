@@ -87,6 +87,16 @@ This folder is for Javascript basic learning.
 --------------------------
 
 
+// http-server
+// 启动本地的http服务
+--------------------------
+	// 安装命令
+	sudo npm install -g http-server
+	// 启动：进入到项目目录
+	http-server
+--------------------------
+
+
 // Grunt
 // 项目构建工具；js,css打包,压缩工具
 --------------------------
