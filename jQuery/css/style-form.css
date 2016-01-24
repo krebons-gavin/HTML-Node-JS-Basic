@@ -1,0 +1,13 @@
+/*2016-01-24, Added by Gavin*/
+
+div {
+    color: indianred;
+}
+
+p {
+    color: deepskyblue;
+}
+
+.focusin span {
+    display: none;
+}

@@ -13,6 +13,7 @@ $(document).ready(function () {
     // http://www.css88.com/jqapi-1.9/bind/
     // https://api.jquery.com/bind/
 
+    // Bind 方法
     $("p.p1").bind("click", function (event) {
         var str = "( " + event.pageX + ", " + event.pageY + " )";
         $("span.span1").text("Click happened! " + str);
@@ -34,6 +35,13 @@ $(document).ready(function () {
 
     $("button").click(function () {
         $("p.customp").trigger("myCustomEvent", ["Gavin"]);
+    });
+
+    // On方法
+    // https://api.jquery.com/on/
+    var count = 0;
+    $("body").on("click", "p.onFunction", function () {
+        $(this).after("<p>Another Paragraph!" + (++count) + "</p>")
     });
 
 });

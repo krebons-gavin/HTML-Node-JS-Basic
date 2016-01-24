@@ -1,24 +1,31 @@
 /*2016-01-18, Added by Gavin*/
 
-p{
+p {
     background: darkgray;
-    font-weight:bold;
-    cursor:pointer;
-    padding:5px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
 }
 
-p.customp{
-    color:orangered;
+p.customp {
+    color: orangered;
 }
 
-p.over{
+p.onFunction {
+    background: greenyellow;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+p.over {
     background: #ccc;
 }
 
-span{
-    color:darkred;
+span {
+    color: darkred;
 }
 
-span.customspan{
-    color:cadetblue;
+span.customspan {
+    color: cadetblue;
 }
