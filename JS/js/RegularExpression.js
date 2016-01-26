@@ -1,5 +1,6 @@
 /**
  * Created by Gavin on 2016/1/11.
+ * http://www.regexlab.com/zh/regref.htm
  */
 
 // 在 JavaScript中，几乎所有的事物都是对象。
@@ -54,6 +55,7 @@ function myReplace(){
 //  [\b] 匹配一个退格符
 //  \b 匹配一个单词的边界
 //  \B 匹配一个单词的非边界
+//  \d 数字
 //  \w 任何单字字符，相当于[a-zA-X0-9_]
 //  \W 匹配一个不可以组成单词的字符，如[\W]匹配"$5.98"中的$
 //  特殊字符的含义:结束

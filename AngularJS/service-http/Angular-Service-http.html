@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- 2016-01-25, Created by Gavin
+    AngularJS Service
+
+    参考：
+    https://docs.angularjs.org/api/ng/service/$http
+    http://plnkr.co/edit/?p=preview
+-->
+
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <!--为了让 Bootstrap 开发的网站对移动设备友好，确保适当的绘制和触屏缩放，需要在网页的 head 之中添加 viewport meta 标签-->
+    <meta name="viewport" content="width=device-width,
+                                     initial-scale=1.0,
+                                     maximum-scale=1.0,
+                                     user-scalable=no">
+
+    <title> AngularJS Service</title>
+
+
+    <!--调用外部CSS样式 -->
+    <!--<link rel="stylesheet" type="text/css" href="./CSS/datepicker2.css"  />-->
+
+</head>
+
+    <body ng-app="httpExample">
+    <div ng-controller="FetchController">
+        <select ng-model="method" aria-label="Request method">
+            <option>GET</option>
+            <option>JSONP</option>
+        </select>
+
+        <input type="text" ng-model="url" size="80" aria-label="URL" />
+        <button id="fetchbtn" ng-click="fetch()">fetch</button><br>
+        <button id="samplegetbtn" ng-click="updateModel('GET', 'http-hello.html')">Sample GET</button>
+        <button id="samplejsonpbtn"
+                ng-click="updateModel('JSONP',
+                  'https://angularjs.org/greet.php?callback=JSON_CALLBACK&name=Super%20Hero')">
+            Sample JSONP
+        </button>
+        <button id="invalidjsonpbtn"
+                ng-click="updateModel('JSONP', 'https://angularjs.org/doesntexist&callback=JSON_CALLBACK')">
+            Invalid JSONP
+        </button>
+        <pre>http status code: {{status}}</pre>
+        <pre>http response data: <br/>{{data}}</pre>
+    </div>
+
+        <!--百度CDN：AngularJS, jQuery, Bootstap
+        http://cdn.code.baidu.com/
+        -->
+        <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!--调用本地脚本-->
+        <script src="service-http.js"></script>
+        <script src="protractor.js"></script>
+
+    </body>
+
+</html>

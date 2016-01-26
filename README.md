@@ -29,6 +29,16 @@ This folder is for Javascript basic learning.
 --------------------------
 
 
+推荐书籍
+--------------------------
+	javascript 权威指南
+	javascript高级语言程序设计
+	JavaScript语言精粹
+	JavaScript模式
+
+--------------------------
+
+
 最有价值的网站-社区、论坛等
 --------------------------
 	// 英文论坛

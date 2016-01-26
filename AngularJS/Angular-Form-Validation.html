@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- 2016-01-25, Created by Gavin
+    AngularJS Service
+
+    参考：
+    https://docs.angularjs.org/guide/forms
+-->
+
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <!--为了让 Bootstrap 开发的网站对移动设备友好，确保适当的绘制和触屏缩放，需要在网页的 head 之中添加 viewport meta 标签-->
+    <meta name="viewport" content="width=device-width,
+                                     initial-scale=1.0,
+                                     maximum-scale=1.0,
+                                     user-scalable=no">
+
+    <title> AngularJS Service</title>
+
+
+    <!--调用外部CSS样式 -->
+    <link rel="stylesheet" type="text/css" href="CSS/myforms.css"  />
+
+</head>
+
+    <body>
+        <div ng-app="myForm">
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <h2>Angular Form Validation</h2>
+                        <hr/>
+                        <form name="form" class="css-form" novalidate>
+                            <div class="col-md-6">
+                                Size (0-10之间的整数):
+                                <input type="number" ng-model="size" name="size"
+                                    min="0" max="10" integer/>{{size}}<br/>
+                                <span ng-show="form.size.$error.integer">The value is not a valid integer!</span>
+                                <span ng-show="form.size.$error.min || form.size.$error.max">
+                                    The value must be in range 0 to 10!</span>
+                            </div>
+
+                            <div class="col-md-6">
+                                Username:
+                                <input type="text" ng-model="name" name="name" username/>{{name}} <br/>
+                                <span ng-show="form.name.$pending.username">Checking if this name is available...</span>
+                                <span ng-show="form.name.$error.username">This user name is already taken!</span>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--百度CDN：AngularJS, jQuery, Bootstap
+        http://cdn.code.baidu.com/
+        -->
+        <script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!--调用本地脚本-->
+        <script src="js/myform2.js"></script>
+
+    </body>
+
+</html>
