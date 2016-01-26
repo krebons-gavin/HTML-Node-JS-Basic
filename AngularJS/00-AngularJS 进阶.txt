@@ -31,6 +31,18 @@
 	4. Directive：倾向于控制UI，做所有与UI有关的事情，也可以使用注入的Service和Controller，倾向于处理局部的数据。
 ------------------
 
+// 启动过程
+------------------
+	自执行函数
+
+	检查是不是多次导入Angular: window.angular.bootstrap
+
+	尝试绑定jQuery: bindJQuery()
+
+	发布ng提供的API: publishEdternalAPI(angular);
+
+	查找ng-app: angularInit(document.bootstrap);
+------------------
 
 // 初级教程 - 中文
 ------------------
