@@ -12,28 +12,34 @@
     <!--<meta charset="gb2312">-->
     <title>jQuery Form</title>
 
-    <!--jQuery CDN - 百度-->
-    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-
-      <!--调用外部jQuery脚本-->
-      <script src="js/jQuery_form.js"></script>
-
     <!--调用外部CSS样式-->
     <link rel="stylesheet" type="text/css" href="css/style-form.css"  />
   </head>
 
   <body>
     <div class="focusin">
-      <p><input type="text"><span>Focusin fire</span></p>
-      <p><input type="password"><span>Focusin Fife</span></p>
+      <p>Name: <input type="text"><span>Focusin fire</span></p>
+      <p>Password: <input type="password"><span>Focusin Fife</span></p>
     </div>
 
-    <!--https://api.jquery.com/select/-->
-    <div class="myselect">
-      <p>Click and drag the mouse to select text in the inputs.</p>
-      <input type="text" value="User name">
-      <input type="text" value="emails to be filled">
+    <hr/>
+    <div>
+      <h2>jQuery Form Submit</h2>
+      <p class="notice">Type 'correct' to validate.</p>
+      <form action="javascript:alert('Submit Success!')">
+        <div class="myform">
+          <input type="text"/>
+          <input type="submit"/>
+        </div>
+      </form>
+      <span class="result"></span>
     </div>
+
+    <!--jQuery CDN - 百度-->
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!--调用外部jQuery脚本-->
+    <script src="js/jQuery_form.js"></script>
 
   </body>
 </html>

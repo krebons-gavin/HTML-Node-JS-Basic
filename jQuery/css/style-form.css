@@ -2,12 +2,24 @@
 
 div {
     color: indianred;
+    margin-left: 10px;
 }
 
 p {
     color: deepskyblue;
+    margin-left: 10px;
+}
+
+p.notice{
+    margin: 0;
+    color: cadetblue;
 }
 
 .focusin span {
     display: none;
 }
+
+span.result{
+    color: orangered;
+}
+

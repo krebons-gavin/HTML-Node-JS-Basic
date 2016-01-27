@@ -10,9 +10,14 @@
 // jQuery API
 ------------------
 	// 官网API - 英文
+	// 推荐
 	https://api.jquery.com/
 
-	// 中文
+	// API - 中文 （与官网一致）
+	// 推荐
+	http://www.jquery123.com/
+
+	// 中文 （分类列表）
 	http://www.css88.com/jqapi-1.9/
 ------------------
 

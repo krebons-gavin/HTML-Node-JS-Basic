@@ -9,8 +9,12 @@ $(document).ready(function(){
        $(this).find("span").css("display","inline").fadeOut(1000);
     });
 
-    // https://api.jquery.com/select/
-    $(":input").select(function(){
-       $("div.myselect").text("Something was selected").show().fadeOut(2000);
+    $("form").submit(function(){
+        if($("div.myform").find("input:first").val()=="correct"){
+            $("span.result").text("Validated...").show();
+            return true;
+        }
+        $("span.result").text("Not Valid").show().fadeOut(3000);
+        return false;
     });
 });
