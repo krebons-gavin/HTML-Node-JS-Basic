@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- 2016-01-13, Created by Gavin
+    html and AngularJS Datepicker, timepicker
+
+    参考：
+    https://github.com/mgcrea/angular-strap
+    http://mgcrea.github.io/angular-strap/#/timepickers
+
+-->
+
+<html ng-app="angularApp">
+    <head lang="en">
+        <meta charset="utf-8">
+        <title> AngularJS Directive -Datepicker</title>
+
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet"
+              href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
+
+    </head>
+
+    <body>
+    <!--AngularJS 日期控件-->
+    <!-- ng-app         初始化一个 AngularJS 应用程序。-->
+    <!-- ng-init        该指令初始化应用程序数据。-->
+    <!-- ng-model       此指令定义的模型，该模型是变量在AngularJS使用。-->
+    <!-- ng-controller  此指令定义控制器，AngularJS应用主要依赖于控制器来控制数据在应用程序中的流动。控制器是一个包含属性/属性和JavaScript对象的功能。每个控制器接受$scope参数指定应用程序/模块，由控制器控制。-->
+    <!-- ng-repeat      该指令将重复集合中的每个项目的HTML元素。-->
+    <!-- 表达式          用于应用程序数据绑定到HTML。表达式都写在双括号就像{{表达式}}。表达式中的行为跟ng-bind指令方式相同。-->
+    <!-- Compile        Compile阶段进行标签解析和变换。-->
+    <!-- Link           Link阶段进行数据绑定等操作。-->
+
+    <div class="container" ng-controller="DateTimeCtrl">
+        <h1>Hello Gavin</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+                <!--<input type="text" ng-model="publishDate3"  data-date-format="YYYY-MM-DD HH:mm A" placeholder="请选择日期" dtpicker/>-->
+                <input type="text" ng-model="vm.myDate"  data-date-format="YYYY-MM-DD" placeholder="请选择日期" dtpicker/>
+            </div>
+
+            <div class="col-md-3">
+                <p>日期: {{vm.myDate}}</p>
+            </div>
+
+            <div class="col-md-3">
+                <!--<input type="text" ng-model="publishDate3"  data-date-format="YYYY-MM-DD HH:mm A" placeholder="请选择日期" dtpicker/>-->
+                <!--显示上下午-->
+                <!--<input type="text" ng-model="vm.myTime"  data-date-format="HH:mm A" placeholder="请选择时间" dtpicker/>-->
+                <!--不显示上下午-->
+                <input type="text" ng-model="vm.myTime"  data-date-format="HH:mm" placeholder="请选择时间" dtpicker/>
+            </div>
+
+            <div class="col-md-3">
+                <p>时间: {{vm.myTime}}</p>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <!--<input type="text" ng-model="publishDate3"  data-date-format="YYYY-MM-DD HH:mm A" placeholder="请选择日期" dtpicker/>-->
+                <input type="text" ng-model="vm.myDateTime"  data-date-format="YYYY-MM-DD HH:mm A" placeholder="请选择日期和时间" dtpicker/>
+                <!--不显示上下午-->
+                <input type="text" ng-model="vm.myDateTime"  data-date-format="YYYY-MM-DD HH:mm" placeholder="请选择日期和时间" dtpicker/>
+            </div>
+
+            <div class="col-md-6">
+                <p>日期和时间: {{vm.myDateTime}}</p>
+            </div>
+            </div>
+    </div>
+
+    <!--外部脚本的引用-->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/locale/zh-cn.js"></script>
+    <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+
+    <!--自定义js文件,用来调用AngularJS指令-->
+    <!--<script type="text/javascript" src="angular-bootstrap-datetimepicker-directive.js"></script>-->
+    <script src="js-gavin/datetimepicker-date.js"></script>
+
+
+    </body>
+
+
+
+</html>

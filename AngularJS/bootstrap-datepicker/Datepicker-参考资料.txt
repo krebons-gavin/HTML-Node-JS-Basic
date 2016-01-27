@@ -1,0 +1,51 @@
+// Datepicker, Timepicker学习
+// 2016-01-15, Gavin
+
+
+// 将Eonasdan Bootstrap 包装成AngularJS指令
+// 可以运行，较简单
+// 可以双向数据绑定
+-------------------
+	https://github.com/diosney/angular-bootstrap-datetimepicker-directive/blob/master/angular-bootstrap-datetimepicker-directive.js
+-------------------
+
+
+Eonasdan - Bootstrap Datepicker 
+// (仅为Bootstrap，需要自己些AngularJS指令来包装)
+-------------------
+	// 代码
+	https://github.com/Eonasdan/bootstrap-datetimepicker
+
+	// Demo 及手册
+	http://eonasdan.github.io/bootstrap-datetimepicker/
+
+	// 安装：缺少AngularJS及bootstrap，要自己安装
+
+	// 包装成AngularJS指令
+	// 很简单，无法双向数据绑定
+	http://fri13th.com/tech/archives/541
+
+	// 包装成AngularJS指令
+	// 较简单，无法双向数据绑定
+	https://gist.github.com/blaryjp/8548592
+
+	// 有待进一步学习；未实践
+	// 复杂的AngularJS datepicker 指令
+	http://plnkr.co/edit/zJOc40?p=preview
+-------------------
+
+
+mgcrea - AngularJS Datepicker
+-------------------
+	// 在线Demo及手册
+	http://mgcrea.github.io/angular-strap/#/timepickers
+
+	// 源代码
+	https://github.com/mgcrea/angular-strap
+-------------------
+
+
+// Material Design	(后期学习)
+-------------------
+	https://material.angularjs.org/latest/demo/input
+-------------------

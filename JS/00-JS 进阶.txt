@@ -3,7 +3,8 @@
 
 // Javascript 官网
 ------------------
-
+	// MDNN - Mazilla
+	https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
 ------------------
 
 
@@ -15,27 +16,35 @@
 
 // 初级教程 - 英文
 ------------------
-
+	// MDNN - Mazilla
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript
 ------------------
 
 
 // 中级教程 - 中文
 ------------------
-
+	// MDNN - Mazilla
+	https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript#引言
 ------------------
 
 
 // 中级教程 - 英文
 ------------------
-
+	// MDNN - Mazilla
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
 ------------------
 
 
 // 高级教程 - 中文
 ------------------
+	// MDNN - Mazilla
+	https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+
+
 	JavaScript资源大全中文版
 	// 内容包括：包管理器、加载器、测试框架、运行器、QA、MVC框架和库、模板引擎等
 	https://github.com/jobbole/awesome-javascript-cn
+
 
 	全栈式JavaScript
 	http://blog.jobbole.com/52745/
@@ -44,7 +53,8 @@
 
 // 高级教程 - 英文
 ------------------
-
+	// MDNN - Mazilla
+	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
 ------------------
 
 
