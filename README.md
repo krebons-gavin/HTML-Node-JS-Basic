@@ -19,6 +19,9 @@ This folder is for Javascript basic learning.
 
 	NodeJS
 
+	HTML5 Boilerplate
+	https://html5boilerplate.com/
+	
 	Scaffolding			// 脚手架
 	http://yeoman.io/generators/
 
@@ -187,6 +190,8 @@ This folder is for Javascript basic learning.
 	
 	share.js
 	// 分享
+
+	 Vue.js
 --------------------------
 
 
