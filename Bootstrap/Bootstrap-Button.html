@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<!-- Bootstrap Button
+    2016-02-22, Created by Gavin
+    http://v3.bootcss.com/css/#buttons
+-->
+
+<html>
+  <head lang="en">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <title>Hello Bootstrap</title>
+
+      <!--jQuery CDN，必须在Bootstrap之前引入jQuery！-->
+      <!-- 新 Bootstrap 核心 CSS 文件 -->
+      <!--<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+
+      <!--本地文件-->
+      <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+      <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+      <!--<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">-->
+
+      <!--本地文件-->
+      <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+
+  </head>
+
+  <body>
+    <!--“行（row）”必须包含在 .container （固定宽度）或 .container-fluid （100% 宽度）中，以便为其赋予合适的排列（aligment）和内补（padding）。-->
+    <!--流式布局容器-->
+    <div class="container-fluid">
+        <div class="row">
+            <h2>Bootstrap Button</h2>
+            <div class="col-md-4">
+                <!-- Standard button -->
+                <button type="button" class="btn btn-default btn-lg" disabled="disabled">（默认样式）Default-Big</button>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <button type="button" class="btn btn-primary btn-lg">（首选项）Primary-Big</button>
+            </div>
+
+            <div class="col-md-4">
+                <!-- Indicates a successful or positive action -->
+                <button type="button" class="btn btn-success">(成功)Success-Norm</button>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-info">(一般信息)Info</button>
+            </div>
+
+            <div class="col-md-4">
+                <button type="button" class="btn btn-warning">(警号)Warning</button>
+            </div>
+
+            <div class="col-md-4">
+                <button type="button" class="btn btn-danger">(危险)Danger</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>Bootstrap辅助类 - 情境背景色</h2>
+            <div class="col-md-12">
+                <p class="bg-primary">Hello, Gavin. Today is 2016-02-22...</p>
+                <p class="bg-success">Hello, Gavin. Today is 2016-02-22...</p>
+                <p class="bg-info">Hello, Gavin. Today is 2016-02-22...</p>
+                <p class="bg-warning">Hello, Gavin. Today is 2016-02-22...</p>
+                <p class="bg-danger">Hello, Gavin. Today is 2016-02-22...</p>
+            </div>
+        </div>
+
+        <!--http://v3.bootcss.com/components/#btn-dropdowns-->
+        <div class="row">
+            <h2>单按钮下拉菜单</h2>
+            <div class="col-md-4">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action<span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another Action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action<span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another Action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action<span class="caret"></span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another Action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <h2>分裂式按钮下拉菜单</h2>
+            <div class="col-md-4">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-lg">Action</button>
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another Action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separate Link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success btn-lg">Action</button>
+                    <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another Action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separate Link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger btn-lg">Action</button>
+                    <button type="button" class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another Action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separate Link</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <!--<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
+    <!--本地jQuery文件-->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <!--<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+    <!--本地Bootstrap文件-->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
