@@ -13,6 +13,7 @@
 ------------------
 	// 官网-有时需要翻墙
 	https://docs.angularjs.org/api
+	https://docs.angularjs.org/guide/forms
 	https://docs.angularjs.org/api/ng/directive/ngModel
 
 	// 英文版-不翻墙可以用
@@ -82,6 +83,8 @@
 	// 更新较快，首选
 	http://www.jb51.net/list/list_253_1.htm
 
+	// AngularJS 知识库
+	http://lib.csdn.net/base/23
 ------------------
 
 

@@ -192,6 +192,16 @@ This folder is for Javascript basic learning.
 	// 分享
 
 	 Vue.js
+
+	 // 2016年JavaScript技术栈展望
+	 http://www.w3cplus.com/javascript/state-of-the-art-javascript-in-2016.html
+--------------------------
+
+
+// 测试
+--------------------------
+	• Karma 用于运行单元测试 (unit testing)
+	• Protractor 用于运行端到端测试 
 --------------------------
 
 
@@ -213,6 +223,12 @@ This folder is for Javascript basic learning.
 	validation				// 验证
 	tree					// 树状：according，导航等
 	......
+--------------------------
+
+// 优秀例子
+--------------------------
+	// 适用于 BootStrap 站点的 15 个免费 jQuery 轮播图插件 - slider
+	http://webres.wang/15-fantastic-free-jquery-sliders-for-bootstrap-sites/
 --------------------------
 
 
@@ -242,4 +258,10 @@ This folder is for Javascript basic learning.
     <!--Bootstrap-->
     <script src="libs/bootstrap/3.3.6/bootstrap.min.js"></script>
     <script src="libs/bootstrap/3.3.6/bootstrap.min.css"></script>
+--------------------------
+
+// 动态
+--------------------------
+	Mozilla、谷歌、微软、苹果 4大浏览器一致通过了一个标准：WebAssembly
+	http://mp.weixin.qq.com/s?__biz=MzA4Nzc4MjI4MQ==&mid=403539734&idx=1&sn=01816447e84072903cfa2bd1f47ac980&scene=0#wechat_redirect
 --------------------------
