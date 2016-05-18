@@ -1,5 +1,7 @@
 // NodeJS 进阶
 // 2016-01-09, Created by Gavin
+// 2016-05-18, Modified by Gavin
+
 
 // NodeJS官网
 ------------------
@@ -59,8 +61,40 @@
 ------------------
 
 
+// 工具
+------------------
+	// Gulp
+	// 自动化构建工具
+	http://www.gulpjs.com.cn/
+------------------
+
+
+
+// MEAN框架
+// MongoDB + Express + AngularJS + Node.js
+------------------
+	// MEAN.JS - boilerplate
+	http://meanjs.org/
+	http://meanjs.org/docs/0.4.x/
+
+	// MEAN.io - STACK / framework  （好，首选）
+	http://mean.io/#!/
+	http://learn.mean.io/
+
+	注意：安装mean时候需要 .net framework 2.0 以及 VS 2005
+	// win 10 自带了 .net framework 2.0，要去控制面板中激活一下
+	http://devonenote.com/2011/09/how-to-install-dotnet-2-0-or-3-5-on-windows-10/
+
+	// MEAN全堆栈javascript开发框架 - 中文
+	http://www.jdon.com/idea/js/mean.html
+------------------
+
+
 // 深度好文
 ------------------
 	// 一名全栈工程师Node.js之路
 	http://mp.weixin.qq.com/s?__biz=MzAwMDU1MTE1OQ==&amp;mid=405001493&amp;idx=1&amp;sn=f0ecab9b31bad83fb065ac37bb728245&amp;scene=1&amp;srcid=0324qyLZlPmYHLdbB6XUjlo3#rd
+
+	// Node 消息- 聊天
+	http://geek.csdn.net/news/detail/66330
 ------------------

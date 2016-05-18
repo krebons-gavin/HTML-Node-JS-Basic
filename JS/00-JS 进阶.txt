@@ -1,6 +1,6 @@
 // Javascript 进阶
 // 2016-01-09, Created by Gavin
-// 2016-03-01, Modified by Gavin
+// 2016-05-18, Modified by Gavin
 
 // Javascript 官网
 ------------------
@@ -59,6 +59,16 @@
 ------------------
 	// MDNN - Mazilla
 	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+
+	// 最流行的编程语言 JavaScript 能做什么？
+	http://bbs.jointforce.com/forum.php?mod=viewthread&tid=16507&extra=page%3D1
+
+	Cordova (即PhoneGap)
+
+	React Native 
+
+	NW.js 和 Electron
+
 ------------------
 
 // JS操作系统
@@ -105,7 +115,9 @@
 ------------------
 
 // 小插件
+------------------
 	DoSlide
 	// DoSlide 是个轻巧、无依赖、低侵入性的 JS 插件，提供一次切换整个子区域的切换模式。DoSlide 的行为可以灵活配置，内置类似 jQuery 的工具库，你可以借助其迅速地实现各种具体需求。
 
 	https://github.com/MopTym/doSlide/blob/dev/README_ZH_CN.md#%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D
+------------------
