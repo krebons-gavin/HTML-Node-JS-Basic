@@ -1,0 +1,73 @@
+// Node.js Command
+// Gavin, 2014-06-24
+
+//  Node查看版本号，在命令行窗口
+------------------------Begin----------------------
+  node -v
+  npm -v
+------------------------End------------------------
+
+// NPM常用命令
+------------------------Begin----------------------
+	npm update
+------------------------Begin----------------------
+
+
+// 运行Node服务器
+------------------------Begin------------------------
+  npm remove <name>			移除
+  npm update <name>			更新
+------------------------End------------------------
+
+
+		// Node命令行管理器
+------------------------Begin------------------------
+  // 启动node
+  node
+
+  // 输出HelloWorld
+  console.log('Hello Gavin');
+
+  // 显示帮助
+  .help
+
+  // 清除变量或者闭包
+  .clear
+
+  // 退出node
+  .exit
+------------------------End------------------------
+
+		// Express 常用命令
+------------------------Begin------------------------
+	// 工作路径
+	D:\node
+
+	// 测试项目路径
+	D:\node\helloExpress
+
+	// 安装Express
+	npm install express -g
+
+	// 使用Express创建工程，先进入到想进入的目录
+	// http://expressjs.com/guide.html
+	// http://blog.csdn.net/tinico/article/details/18033431
+	express helloExpress
+	cd helloExpress
+	npm install
+
+	// 启动项目
+	node app.js
+
+	// 网址
+
+
+	// 停止
+	Ctrl + c
+------------------------End------------------------
+
+		// Jade教程
+------------------------Jade: Begin------------------------
+  // 官网
+  http://jade-lang.com/
+------------------------Jade: End------------------------
