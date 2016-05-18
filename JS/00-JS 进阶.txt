@@ -27,6 +27,9 @@
 	// MDNN - Mazilla
 	https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/A_re-introduction_to_JavaScript#引言
 
+	// JavaScript - 知识库
+	http://lib.csdn.net/base/18
+
 	// JavaScript设计模式
 	http://www.cnblogs.com/cangowu/p/5073948.html
 ------------------
@@ -63,7 +66,7 @@
 	// 最流行的编程语言 JavaScript 能做什么？
 	http://bbs.jointforce.com/forum.php?mod=viewthread&tid=16507&extra=page%3D1
 
-	Cordova (即PhoneGap)
+	Cordova (即原来的PhoneGap)
 
 	React Native 
 
