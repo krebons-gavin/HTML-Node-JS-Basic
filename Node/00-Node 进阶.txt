@@ -1,6 +1,6 @@
 // NodeJS 进阶
 // 2016-01-09, Created by Gavin
-// 2016-05-18, Modified by Gavin
+// 2016-05-19, Modified by Gavin
 
 
 // NodeJS官网
@@ -13,7 +13,7 @@
 // API
 ------------------
 	// 官网
-	https://nodejs.org/dist/latest-v4.x/docs/api/
+	https://nodejs.org/en/docs/
 ------------------
 
 
@@ -33,7 +33,7 @@
 // 初级教程 - 英文
 ------------------
 	// Node 官网
-	https://nodejs.org/dist/latest-v4.x/docs/api/
+	https://nodejs.org/en/docs/
 ------------------
 
 
@@ -41,6 +41,10 @@
 ------------------
 	// Node.js 教程 - Codecloud
 	http://w3cschool.codecloud.net/nodejs/node-js-restful-api.html
+
+	// Node.js 知识库 - CSDN
+	http://lib.csdn.net/base/30/structure
+	http://lib.csdn.net/base/30
 ------------------
 
 
