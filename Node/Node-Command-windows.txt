@@ -1,5 +1,6 @@
-// Node.js Command
-// Gavin, 2014-06-24
+// Node.js Command for windows
+// 2014-06-24, Added by Gavin
+// 2016-05-22, Modified by Gavin
 
 //  Node查看版本号，在命令行窗口
 ------------------------Begin----------------------
