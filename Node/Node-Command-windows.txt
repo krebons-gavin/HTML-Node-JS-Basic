@@ -10,7 +10,28 @@
 
 // NPM常用命令
 ------------------------Begin----------------------
+	// 参考链接
+	http://www.runoob.com/nodejs/nodejs-npm.html
+	
+	// npm 升级
+	npm install npm -g
 	npm update
+
+	// 本地安装
+	npm install express
+
+	// 全局安装
+	npm install express -g
+
+	// 查看所有全局安装的模块
+	npm ls -g
+
+	// 卸载模块
+	npm uninstall express
+
+	// 更新模块
+	npm update express
+
 ------------------------Begin----------------------
 
 

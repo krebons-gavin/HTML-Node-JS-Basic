@@ -103,3 +103,13 @@
 	// Node 消息- 聊天
 	http://geek.csdn.net/news/detail/66330
 ------------------
+
+// 基础知识
+------------------
+	// NPM 使用介绍
+	http://www.runoob.com/nodejs/nodejs-npm.html
+	
+	// REPL(交互式解释器)
+	http://www.runoob.com/nodejs/nodejs-repl.html
+------------------
+
