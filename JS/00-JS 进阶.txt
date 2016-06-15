@@ -69,6 +69,11 @@
 	Cordova (即原来的PhoneGap)
 
 	React Native 
+	http://www.lcode.org/react-native-developer-zong/
+	https://github.com/facebook/react-native
+
+	// React知识库内容精选：10篇文章让你迅速了解该框架
+	http://geek.csdn.net/news/detail/81106
 
 	NW.js 和 Electron
 
