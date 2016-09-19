@@ -1,5 +1,13 @@
 // AngularJS 进阶
 // 2016-01-09, Created by Gavin
+// 2016-09-19, Modified by Gavin
+
+// Angular2
+------------------
+	https://angular.io/
+	https://angular.io/docs/js/latest/quickstart.html
+	https://angular.io/docs/ts/latest/quickstart.html
+------------------
 
 
 // AngularJS官网
