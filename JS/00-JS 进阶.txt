@@ -66,17 +66,24 @@
 	// 最流行的编程语言 JavaScript 能做什么？
 	http://bbs.jointforce.com/forum.php?mod=viewthread&tid=16507&extra=page%3D1
 
-	Cordova (即原来的PhoneGap)
+	Cordova (即原来的PhoneGap)	
 
-	React Native 
-	http://www.lcode.org/react-native-developer-zong/
-	https://github.com/facebook/react-native
+	NW.js 和 Electron
+
+------------------
+
+
+// React
+------------------
+	// 半小时深刻理解React
+	http://geek.csdn.net/news/detail/108614
 
 	// React知识库内容精选：10篇文章让你迅速了解该框架
 	http://geek.csdn.net/news/detail/81106
 
-	NW.js 和 Electron
-
+	// React Native 
+	http://www.lcode.org/react-native-developer-zong/
+	https://github.com/facebook/react-native
 ------------------
 
 

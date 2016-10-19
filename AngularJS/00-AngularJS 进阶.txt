@@ -53,6 +53,7 @@
 	查找ng-app: angularInit(document.bootstrap);
 ------------------
 
+
 // 初级教程 - 中文
 ------------------
 	// 慕课网 - 视频教程
@@ -64,6 +65,9 @@
 
 	// Angular中文开发指南
 	https://gitcafe.com/Angularjs/Angularjs-Developer-Guide/blob/master/AngularJS%E5%BC%80%E5%8F%91%E6%8C%87%E5%8D%9705%EF%BC%9A%E6%8C%87%E4%BB%A4.md
+
+	// 温故而知新 - AngularJS 1.x
+	http://geek.csdn.net/news/detail/102405
 ------------------
 
 
