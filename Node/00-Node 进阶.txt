@@ -1,6 +1,7 @@
 // NodeJS 进阶
 // 2016-01-09, Created by Gavin
 // 2016-05-19, Modified by Gavin
+// 2016-11-02, Modified by Gavin
 
 
 // NodeJS官网
@@ -12,8 +13,12 @@
 
 // API
 ------------------
-	// 官网
+	// 官网 - 英文（最新API）
 	https://nodejs.org/en/docs/
+	https://nodejs.org/dist/latest-v6.x/docs/api/url.html
+
+	// 中文API - 版本较老（仅供参考）
+	http://nodeapi.ucdok.com/#/api/
 ------------------
 
 
@@ -21,6 +26,13 @@
 ------------------
 	YARN - facebook
 	NPM - node.js自带
+------------------
+
+
+// 社区
+------------------
+	// 中文社区
+	http://cnodejs.org/
 ------------------
 
 
@@ -42,6 +54,9 @@
 
 // 初级教程 - 中文
 ------------------
+	// 七天学会NodeJS
+	http://nqdeng.github.io/7-days-nodejs/
+
 	// RUNNOOB.COM - 简单，入门
 	http://www.runoob.com/nodejs/nodejs-tutorial.html
 
