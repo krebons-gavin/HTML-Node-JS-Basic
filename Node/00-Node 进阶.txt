@@ -43,12 +43,19 @@
 ------------------
 
 
-// IDE - Webstorm/IntelliJ IDEA 常用快捷键
+// IDE - Webstorm/IntelliJ IDEA 常用快捷键 - Windows
 ------------------
 	Ctrl+Alt+L 		// 格式化代码
 	ctrl+d  		// 复制当前行到下一行
-	Ctrl+ /			// 注释掉所选区域
-	Ctrl+Shift+ / 	// 取消注释
+	Ctrl+ /			// 注释/去掉注释
+------------------
+
+
+// IDE - Webstorm/IntelliJ IDEA 常用快捷键 -  Mac
+------------------
+	Command+Alt+L 		// 格式化代码
+	Command+d  		// 复制当前行到下一行
+	Command+ /			// 注释/去掉注释
 ------------------
 
 
