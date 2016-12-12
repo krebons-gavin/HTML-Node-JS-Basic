@@ -61,9 +61,6 @@
 
 // 初级教程 - 中文
 ------------------
-	// 七天学会NodeJS
-	http://nqdeng.github.io/7-days-nodejs/
-
 	// RUNNOOB.COM - 简单，入门
 	http://www.runoob.com/nodejs/nodejs-tutorial.html
 
@@ -84,6 +81,9 @@
 
 // 中级教程 - 中文
 ------------------
+	// 七天学会NodeJS
+	http://nqdeng.github.io/7-days-nodejs/
+	
 	// Node.js 教程 - Codecloud
 	http://w3cschool.codecloud.net/nodejs/node-js-restful-api.html
 
