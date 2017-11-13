@@ -1,0 +1,43 @@
+// Angular4 进阶
+// 2017-08-04, Created by Gavin
+// 2017-08-04, Modified by Gavin
+
+// Angular4
+------------------
+	https://angular.io/
+
+	https://angular.io/guide/quickstart
+------------------
+
+
+// AngularJS官网
+------------------
+	// Google - Angular
+	https://angular.io/
+------------------
+
+
+// 教程及API文档
+------------------
+	// 官网-有时需要翻墙
+	https://angular.io/tutorial
+------------------
+
+
+// 注意事项
+------------------
+	Angular 2以后用的Typescript，和AngularJS不同，属于新内容；
+------------------
+
+// 安装及启动
+------------------
+	// 官网
+	https://angular.io/guide/quickstart
+
+	// 终端启动
+	cd my-ag-app
+	ng serve --open
+
+	// 本地浏览器链接
+	http://localhost:4200/
+------------------

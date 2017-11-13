@@ -108,7 +108,46 @@
 ------------------
 
 
-// 运算符
+# 插件-框架-主题
+------------------
+	// Javascript 的开源功能插件和框架集锦
+	http://www.chinaznyj.com/KeChuanDaiSheBei/1733.html
+
+	// 2017年值得关注的JavaScript框架与主题
+	http://www.smartcitychina.cn/QianYanJiShu/2016-12/8023.html
+
+	##  MV*框架
+	* React.js 		// Facebook
+	* Angular2 		// Google
+	* Vue.js
+	* Ember.js
+	* Backbone.js
+	* T3.js
+	* Meteor
+
+	## UI库
+	* ExtJS		（收费，闭源）
+	* Bootstrap
+
+	## 测试工具
+	* Karma
+	* Jasmine		（单元测试）
+
+	## CMS
+	* DoraCMS
+	* Cody
+	* Ghost
+	* KeystoneJS
+
+	## 表格
+	* DataTables
+	* jqGrid
+	* jTable
+	* ParamQuery
+------------------
+
+
+# 运算符
 ------------------
 	http://www.finalshares.com/read-1237
 	(!(~+[])+{})[--[~+""][+[]]*[~+[]] + ~~!+[]]+({}+[])[[~!+[]]*~+[]] 

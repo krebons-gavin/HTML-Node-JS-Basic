@@ -1,0 +1,187 @@
+XSD学习笔记
+
+参考链接
+--------------------------------
+	// W3SCHOOL
+	http://www.w3school.com.cn/schema/schema_simple.asp
+	http://www.w3school.com.cn/schema/schema_facets.asp
+--------------------------------
+
+
+基本概念
+--------------------------------
+	<!-- 定义元素 -->
+	<xs:element name="lastname" type="xs:string"/>
+	
+	<!-- 定义简单类型 -->
+	<xs:simpleType>
+
+	<!-- 定义复合元素 -->
+	<xs:complexType>
+
+	<!-- 为元素设置限制条件 -->
+	<xs:restriction base="xs:string">
+		// 枚举约束
+		<xs:enumeration value="Audi"/>
+		
+		// 大小写及位数约束
+		<xs:pattern value="[a-zA-Z0-9]{8}"/>
+
+	<!-- 意味着被定义的元素必须按定义的次序出现。-->
+	<xs:sequence>
+--------------------------------
+
+
+简单类型
+--------------------------------
+	// 元素类型，属性
+	<xs:element name="lastname" type="xs:string"/>
+	<xs:element name="age" type="xs:integer"/>
+	
+	// 默认值
+	<!-- 在缺省的情况下，属性是可选的。如需规定属性为必选，请使用 "use" 属性 -->
+	<xs:element name="color" type="xs:string" default="red"/>
+	<xs:attribute name="lang" type="xs:string" use="required"/>
+
+	// 限定
+	<!-- 如需把 XML 元素的内容限制为一组可接受的值，我们要使用枚举约束（enumeration constraint） -->
+	<xs:element name="car">
+	<xs:simpleType>
+	  <xs:restriction base="xs:string">
+	    <xs:enumeration value="Audi"/>
+	    <xs:enumeration value="Golf"/>
+	    <xs:enumeration value="BMW"/>
+	  </xs:restriction>
+	</xs:simpleType>
+	</xs:element> 
+
+	<!-- 定义了带有一个限定的名为 "password" 的元素。可接受的值是由 8 个字符组成的一行字符，这些字符必须是大写或小写字母 a - z 亦或数字 0 - 9 -->
+	<!-- 也可以对长度、空白字符等进行限制 -->
+	<xs:element name="password">
+	<xs:simpleType>
+	  <xs:restriction base="xs:string">
+	    <xs:pattern value="[a-zA-Z0-9]{8}"/>
+	  </xs:restriction>
+	</xs:simpleType>
+	</xs:element> 
+--------------------------------
+
+
+复杂类型 
+--------------------------------
+// 复合元素
+	<!-- 有两种方式来定义复合元素 -->
+	<!-- 1. 通过命名此元素，可直接对"employee"元素进行声明 -->
+	<xs:element name="employee">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="firstname" type="xs:string"/>
+	      <xs:element name="lastname" type="xs:string"/>
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+
+	<!-- "employee" 元素可以使用 type 属性，这个属性的作用是引用要使用的复合类型的名称 -->
+	<xs:element name="employee" type="personinfo"/>
+	<xs:complexType name="personinfo">
+	  <xs:sequence>
+	    <xs:element name="firstname" type="xs:string"/>
+	    <xs:element name="lastname" type="xs:string"/>
+	  </xs:sequence>
+	</xs:complexType>
+
+	<!--也可以在已有的复合元素之上以某个复合元素为基础，然后添加一些元素-->
+
+// 复合空元素
+	<xs:element name="product" type="prodtype"/>
+	<xs:complexType name="prodtype">
+	  <xs:attribute name="prodid" type="xs:positiveInteger"/>
+	</xs:complexType>
+
+// 仅含文本的复合元素
+	// XML实例
+	<shoesize country="france">35</shoesize>
+
+	<!-- 用 extension 或 restriction 元素来扩展或限制元素的基本简易类型。-->
+	<xs:element name="shoesize">
+	  <xs:complexType>
+	    <xs:simpleContent>
+	      <xs:extension base="xs:integer">
+	        <xs:attribute name="country" type="xs:string" />
+	      </xs:extension>
+	    </xs:simpleContent>
+	  </xs:complexType>
+	</xs:element>
+
+// 带有混合内容的复合类型
+	<!-- XML实例 -->
+	<letter>
+	Dear Mr.<name>John Smith</name>.
+	Your order <orderid>1032</orderid>
+	will be shipped on <shipdate>2017-11-13</shipdate>.
+	</letter>
+
+	<!-- 为了使字符数据可以出现在 "letter" 的子元素之间，mixed 属性必须被设置为 "true" -->
+	<xs:element name="letter" type="lettertype">
+	  <xs:complexType name="lettertype" mixed="true">
+	    <xs:sequence>
+	      <xs:element name="name" type="xs:string"/>
+	      <xs:element name="orderid" type="xs:positiveInteger"/>
+	      <xs:element name="shipdate" type="xs:date"/>
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+
+// 复合类型指示器
+	<!-- http://www.w3school.com.cn/schema/schema_complex_indicators.asp -->
+	<!-- 共有七种指示器 -->
+	<!-- Order 指示器：All, Choice, Sequence-->
+	<!-- Occurrence 指示器：maxOccurs, minOccurs-->
+	<!-- Group 指示器：Group name， attributeGroup name-->
+	
+	<!-- all指示器规定子元素可以按照任意顺序出现，且每个子元素必须只出现一次 -->
+	<xs:element name="person">
+	  <xs:complexType>
+	    <!-- all指示器 -->
+	    <xs:all>
+	      <xs:element name="firstname" type="xs:string"/>
+	      <xs:element name="lastname" type="xs:string"/>
+	    </xs:all>
+	  </xs:complexType>
+	</xs:element>
+
+	<!--定义元素组-->
+	<xs:group name="persongroup">
+	  <xs:sequence>
+	    <xs:element name="firstname" type="xs:string"/>
+	    <xs:element name="lastname" type="xs:string"/>
+	    <xs:element name="birthday" type="xs:date"/>
+	  </xs:sequence>
+	</xs:group>
+	<!--定义复合类型-->
+	<xs:element name="person" type="personinfo"/>
+	<xs:complexType name="personinfo">
+	  <xs:sequence>
+	    <!--引用元素组-->
+	    <xs:group ref="persongroup"/>
+	    <xs:element name="country" type="xs:string"/>
+	  </xs:sequence>
+	</xs:complexType>
+
+	<!--定义属性组-->
+	<xs:attributeGroup name="personattrgroup">
+	  <xs:attribute name="firstname" type="xs:string"/>
+	  <xs:attribute name="lastname" type="xs:string"/>
+	  <xs:attribute name="birthday" type="xs:date"/>
+	</xs:attributeGroup>
+	<!--定义复合元素-->
+	<xs:element name="person">
+	  <xs:complexType>
+	    <!--引用属性组-->
+	    <xs:attributeGroup ref="personattrgroup"/>
+	  </xs:complexType>
+	</xs:element>
+--------------------------------
+
+
+
