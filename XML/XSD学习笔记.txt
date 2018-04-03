@@ -10,36 +10,120 @@ XSD学习笔记
 
 基本概念
 --------------------------------
-	<!-- 定义元素 -->
+<!-- 创建一个 XML Schema -->
+	<?xml version="1.0" encoding="ISO-8859-1" ?>
+	<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	...
+	</xs:schema>
+
+<!-- 分割 Schema -->
+	<!-- 文档很复杂时却难以阅读和维护。需要对所有元素和属性的定义，然后再使用 ref 属性来引用它们 -->
+	<!-- 简易元素的定义 -->
+	<xs:element name="orderperson" type="xs:string"/>
+	<xs:element name="name" type="xs:string"/>
+	<xs:element name="address" type="xs:string"/>
+	<xs:element name="city" type="xs:string"/>
+	<xs:element name="country" type="xs:string"/>
+	
+	<!-- 属性的定义 -->
+	<xs:attribute name="orderid" type="xs:string"/>
+
+	<!-- 复合元素的定义 -->
+	<xs:element name="shipto">
+	 <xs:complexType>
+	  <xs:sequence>
+	   <xs:element ref="name"/>
+	   <xs:element ref="address"/>
+	   <xs:element ref="city"/>
+	   <xs:element ref="country"/>
+	  </xs:sequence>
+	 </xs:complexType>
+	</xs:element>
+
+<!-- annotation 元素 -->
+	<!-- annotation 元素是一个顶层元素，规定 schema 的注释 -->
+	<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	
+	<xs:annotation>
+	  <xs:appinfo>W3CSchool Note</xs:appinfo>
+	  <xs:documentation xml:lang="en">
+	  This Schema defines a W3CSchool note!
+	  </xs:documentation>
+	</xs:annotation>
+	
+	……
+	</xs:schema>
+
+
+<!-- 定义元素及属性 -->
+	<xs:element name="shiporder">
+	 <xs:complexType>
+	  <xs:sequence>
+	  ...
+	  ...
+	  </xs:sequence>
+	  ...
+	 </xs:complexType>
+	</xs:element>
+
+<!-- 定义元素 -->
 	<xs:element name="lastname" type="xs:string"/>
 	
-	<!-- 定义简单类型 -->
+<!-- 定义简单类型 -->
 	<xs:simpleType>
 
-	<!-- 定义复合元素 -->
+<!-- 定义复合元素 -->
 	<xs:complexType>
 
-	<!-- 为元素设置限制条件 -->
+<!-- 为元素设置限制条件 -->
 	<xs:restriction base="xs:string">
 		// 枚举约束
 		<xs:enumeration value="Audi"/>
-		
 		// 大小写及位数约束
 		<xs:pattern value="[a-zA-Z0-9]{8}"/>
 
-	<!-- 意味着被定义的元素必须按定义的次序出现。-->
+<!-- 意味着被定义的元素必须按定义的次序出现。-->
 	<xs:sequence>
 --------------------------------
 
 
-简单类型
+数据类型
+--------------------------------
+	// 字符串
+	<!-- schema 中规格化字符串数据类型 -->
+	<!-- 规格化字符串数据类型同样可包含字符，但是 XML 处理器会移除折行，回车以及制表符。 -->
+	<!-- Token 数据类型同样可包含字符，但是 XML 处理器会移除换行符、回车、制表符、开头和结尾的空格以及（连续的）空格。 -->
+	<xs:element name="customer" type="xs:normalizedString"/>
+	<!-- XML文档中的元素 -->
+	<customer>John Smith</customer>
+
+	// 日期
+	<!--  schema 中日期声明的例子 -->
+	<xs:element name="start" type="xs:date"/>
+	<xs:element name="startdate" type="xs:dateTime"/>
+	<!-- XML文档中的元素 -->
+	<start>2017-09-24</start>
+	<startdate>2017-05-30T09:00:00</startdate>
+
+	// 数值
+	<!--  scheme 中十进制数声明的例子 -->
+	<xs:element name="prize" type="xs:decimal"/>
+	<xs:element name="prise" type="xs:integer"/>
+	<!-- XML文档中的元素 -->
+	<prize>999.50</prize>
+	<prise>999</prise>
+--------------------------------
+
+
+元素-简单类型
 --------------------------------
 	// 元素类型，属性
 	<xs:element name="lastname" type="xs:string"/>
 	<xs:element name="age" type="xs:integer"/>
 	
-	// 默认值
+	// 默认值及必选值
 	<!-- 在缺省的情况下，属性是可选的。如需规定属性为必选，请使用 "use" 属性 -->
+	<!-- 必选属性的声明必须被置于最后 -->
 	<xs:element name="color" type="xs:string" default="red"/>
 	<xs:attribute name="lang" type="xs:string" use="required"/>
 
@@ -67,7 +151,7 @@ XSD学习笔记
 --------------------------------
 
 
-复杂类型 
+元素-复杂类型 
 --------------------------------
 // 复合元素
 	<!-- 有两种方式来定义复合元素 -->
@@ -92,11 +176,28 @@ XSD学习笔记
 
 	<!--也可以在已有的复合元素之上以某个复合元素为基础，然后添加一些元素-->
 
+// 元素出现次数限制
+	<!-- 使用 maxOccurs 和 minOccurs 属性来定义某个元素可能出现的次数。maxOccurs 定义某元素出现次数的最大值，而 minOccurs 则定义某元素出现次数的最小值。-->
+	<!-- maxOccurs 和 minOccurs 的默认值都是 1。 -->
+	<!-- unbounded代表元素可出现任意多次。 -->
+	<xs:element name="item" maxOccurs="unbounded">
+	 <xs:complexType>
+	  <xs:sequence>
+	   <xs:element name="title" type="xs:string"/>
+	   <xs:element name="note" type="xs:string" minOccurs="0"/>
+	   <xs:element name="quantity" type="xs:positiveInteger"/>
+	   <xs:element name="price" type="xs:decimal"/>
+	  </xs:sequence>
+	 </xs:complexType>
+	</xs:element>
+
+
 // 复合空元素
 	<xs:element name="product" type="prodtype"/>
 	<xs:complexType name="prodtype">
 	  <xs:attribute name="prodid" type="xs:positiveInteger"/>
 	</xs:complexType>
+
 
 // 仅含文本的复合元素
 	// XML实例
@@ -112,6 +213,7 @@ XSD学习笔记
 	    </xs:simpleContent>
 	  </xs:complexType>
 	</xs:element>
+
 
 // 带有混合内容的复合类型
 	<!-- XML实例 -->
@@ -132,6 +234,7 @@ XSD学习笔记
 	  </xs:complexType>
 	</xs:element>
 
+
 // 复合类型指示器
 	<!-- http://www.w3school.com.cn/schema/schema_complex_indicators.asp -->
 	<!-- 共有七种指示器 -->
@@ -149,6 +252,7 @@ XSD学习笔记
 	    </xs:all>
 	  </xs:complexType>
 	</xs:element>
+
 
 	<!--定义元素组-->
 	<xs:group name="persongroup">
@@ -168,6 +272,7 @@ XSD学习笔记
 	  </xs:sequence>
 	</xs:complexType>
 
+
 	<!--定义属性组-->
 	<xs:attributeGroup name="personattrgroup">
 	  <xs:attribute name="firstname" type="xs:string"/>
@@ -181,6 +286,67 @@ XSD学习笔记
 	    <xs:attributeGroup ref="personattrgroup"/>
 	  </xs:complexType>
 	</xs:element>
+
+
+	<!--Any 元素-->
+	<!--any 元素使我们有能力通过未被 schema 规定的元素来拓展 XML 文档-->
+	<xs:element name="person">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="firstname" type="xs:string"/>
+	      <xs:element name="lastname" type="xs:string"/>
+	      <xs:any minOccurs="0"/>
+	    </xs:sequence>
+	  </xs:complexType>
+	</xs:element>
+
+
+	<!-- anyAttribute 元素-->
+	<!-- anyAttribute 元素使我们有能力通过未被 schema 规定的属性来扩展 XML 文档 -->
+	<xs:element name="person">
+	  <xs:complexType>
+	    <xs:sequence>
+	      <xs:element name="firstname" type="xs:string"/>
+	      <xs:element name="lastname" type="xs:string"/>
+	    </xs:sequence>
+	    <xs:anyAttribute/>
+	  </xs:complexType>
+	</xs:element>
+
+
+	<!--元素替换（Element Substitution）-->
+	<!--通过 XML Schema，一个元素可对另一个元素进行替换。-->
+	<xs:element name="name" type="xs:string"/>
+	<xs:element name="navn" substitutionGroup="name"/>
+
+	<xs:complexType name="custinfo">
+	  <xs:sequence>
+	    <xs:element ref="name"/>
+	  </xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="customer" type="custinfo"/>
+	<xs:element name="kunde" substitutionGroup="customer"/>
+	
+	<!--有效的 XML 文档类似这样-->
+	<customer>
+	  <name>John Smith</name>
+	</customer>
+	<!--或者-->
+	<kunde>
+	  <navn>John Smith</navn>
+	</kunde>
+
+	<!--为防止其他的元素替换某个指定的元素，请使用 block 属性-->
+	<xs:element name="name" type="xs:string" block="substitution"/>
+
+
+	<!-- substitutionGroup -->
+	<!-- 可替换元素的类型必须和主元素相同，或者从主元素衍生而来。 -->
+	<!-- substitutionGroup 中的所有元素（主元素和可替换元素）必须被声明为全局元素，否则就无法工作 -->
+	<!-- 全局元素（Global Elements）指 "schema" 元素的直接子元素！ -->
+	<!-- 本地元素（Local elements）指嵌套在其他元素中的元素。 -->
+
 --------------------------------
 
 
